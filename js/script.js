@@ -7,7 +7,7 @@ function getGreeting(){
   }
 
   else if(hour >= 12 && hour < 18){
-    return "Buenas tardes";
+    return "Buenas tardes.";
   }
 
   else{
