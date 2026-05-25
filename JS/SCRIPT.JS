@@ -312,7 +312,7 @@ class Laser{
     this.targetX = target.x;
     this.targetY = target.y;
 
-    this.speed = 8;
+    this.speed = 15;
 
     const dx =
     this.targetX - this.x;
