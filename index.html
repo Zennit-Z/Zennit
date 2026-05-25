@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Zennit | Soluciones Tecnológicas</title>
+
+  <link rel="stylesheet" href="css/STYLE.CSS" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="particles-js"></div>
+
+  <div class="battlefield">
+
+<canvas id="spaceBattle"></canvas>
+
+</div>
+
+
+  <nav>
+    <div class="logos">
+
+  <div class="logo">
+    ZEN<span>NIT</span>
+  </div>
+
+  <div class="logo clothes-logo">
+    ZEN<span>CLOTHES</span>
+  </div>
+
+</div>
+
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proyectos">Proyectos Destacados</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <a href="#contacto" class="btn">Contáctanos</a>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>
+        Soluciones <span>Tecnológicas</span> Inteligentes
+      </h1>
+
+
+      <a href="#servicios" class="btn">
+        Explorar Servicios
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICIOS -->
+
+  <section id="servicios">
+
+    <h2 class="section-title">
+      Nuestros Servicios
+    </h2>
+
+    <p class="section-sub">
+      Tecnología moderna y soporte profesional para empresas y clientes.
+    </p>
+
+    <div class="services">
+
+      <div class="card"
+        onclick="openService('Soporte y Reparación Tecnológica')">
+
+        <h3>Soporte y Reparación Tecnológica</h3>
+
+        <p>
+          Diagnóstico avanzado, reparación de equipos y optimización profesional de hardware y software.
+        </p>
+
+      </div>
+
+      <div class="card"
+        onclick="openService('Automatización Empresarial')">
+
+        <h3>Automatización Empresarial</h3>
+
+        <p>
+          Soluciones inteligentes para optimizar procesos y mejorar la productividad empresarial.
+        </p>
+
+      </div>
+
+      <div class="card"
+        onclick="openService('Desarrollo Web Profesional')">
+
+        <h3>Desarrollo Web Profesional</h3>
+
+        <p>
+          Páginas web modernas, rápidas y profesionales para fortalecer tu presencia digital.
+        </p>
+
+      </div>
+
+      <div class="card"
+        onclick="openService('Publicidad y Diseño Digital')">
+
+        <h3>Publicidad y Diseño Digital</h3>
+
+        <p>
+          Diseño visual y publicidad profesional para marcas y negocios modernos.
+        </p>
+
+      </div>
+
+      <div class="card"
+        onclick="openService('Logística y Gestión Tecnológica')">
+
+        <h3>Logística y Gestión Tecnológica</h3>
+
+        <p>
+          Integración tecnológica eficiente para optimizar procesos y estructuras empresariales.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROYECTOS -->
+
+<section id="proyectos">
+
+  <h2 class="section-title">
+
+    Proyectos <span>Destacados</span>
+
+  </h2>
+
+  <p class="section-sub">
+
+    Algunos proyectos desarrollados por Zennit.
+
+  </p>
+
+  <div class="projects-row">
+
+    <!-- PROYECTO 1 -->
+
+    <a href="https://reparatodoohc.com/"
+      target="_blank"
+      class="project-item">
+
+      <div class="project-image">
+
+        <img src="img/p1ohc.png">
+
+        <div class="project-title">
+
+          OHC
+
+          <span class="flash"></span>
+
+        </div>
+
+      </div>
+
+    </a>
+
+    <!-- PROYECTO 2 -->
+
+    <a href="https://tupagina2.com"
+      target="_blank"
+      class="project-item">
+
+      <div class="project-image">
+
+        <img src="img/proyecto2.jpg">
+
+        <div class="project-title">
+
+          Proyecto Web 2
+
+        </div>
+
+      </div>
+
+    </a>
+
+    <!-- PROYECTO 3 -->
+
+    <a href="https://tupagina3.com"
+      target="_blank"
+      class="project-item">
+
+      <div class="project-image">
+
+        <img src="img/proyecto3.jpg">
+
+        <div class="project-title">
+
+          Proyecto Web 3
+
+        </div>
+
+      </div>
+
+    </a>
+
+    <!-- PROYECTO 4 -->
+
+    <a href="https://tupagina3.com"
+      target="_blank"
+      class="project-item">
+
+      <div class="project-image">
+
+        <img src="img/proyecto3.jpg">
+
+        <div class="project-title">
+
+          Proyecto Web 3
+
+        </div>
+
+      </div>
+
+    </a>
+
+    <!-- PROYECTO 5 -->
+
+    <a href="https://tupagina4.com"
+      target="_blank"
+      class="project-item">
+
+      <div class="project-image">
+
+        <img src="img/proyecto4.jpg">
+
+        <div class="project-title">
+
+          Proyecto Web 4
+
+        </div>
+
+      </div>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+  <!-- MODAL -->
+
+  <div class="service-modal" id="serviceModal">
+
+    <div class="modal-box">
+
+      <span class="close-modal"
+        onclick="closeModal()">✕</span>
+
+      <h2 id="serviceTitle"></h2>
+
+      <p>
+        ¿Te interesa este servicio?
+        Nuestro equipo está listo para ayudarte con soluciones modernas y profesionales.
+      </p>
+
+      <div class="modal-buttons">
+
+        <a id="whatsappBtn"
+          href="#"
+          target="_blank"
+          class="modal-btn">
+
+          Contactar
+
+        </a>
+
+        <button class="modal-btn secondary"
+          onclick="closeModal()">
+
+          Más tarde
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- NOSOTROS -->
+
+<section id="nosotros">
+
+  <h2 class="section-title">
+    ¿Quiénes <span>Somos?</span>
+  </h2>
+
+  <p class="section-sub">
+    Innovación, tecnología y soluciones digitales modernas.
+  </p>
+
+  <div class="about-simple">
+
+    <p>
+      En <span>Zennit</span> desarrollamos soluciones tecnológicas modernas enfocadas en innovación, automatización y crecimiento digital para empresas y emprendedores. Nuestro objetivo es brindar experiencias profesionales mediante desarrollo web, soporte técnico, diseño digital y soluciones empresariales inteligentes, combinando creatividad, estrategia y tecnología moderna para crear proyectos visualmente impactantes, funcionales y optimizados que fortalezcan la presencia digital de cada cliente.
+    </p>
+
+  </div>
+
+</section>
+
+  <!-- CONTACTO -->
+
+  <section id="contacto">
+
+    <h2 class="section-title">
+      Contácta<span>nos</span>
+    </h2>
+
+    <div class="contact-box">
+
+      <form id="contactForm">
+
+        <input type="text"
+          id="nombre"
+          placeholder="Tu nombre"
+          required>
+
+        <input type="email"
+          id="correo"
+          placeholder="Tu correo"
+          required>
+
+        <textarea
+          id="mensaje"
+          placeholder="Cuéntanos qué necesitas"
+          required></textarea>
+
+        <button class="btn" type="submit">
+          Enviar Solicitud
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Zennit - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
