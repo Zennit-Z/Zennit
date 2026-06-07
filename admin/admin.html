@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>Zennit Admin</title>
+
+  <link rel="stylesheet"
+    href="admin.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- LOGIN -->
+
+  <div class="login-box"
+    id="loginBox">
+
+    <h1>
+      ZEN<span>NIT</span> ADMIN
+    </h1>
+
+    <input type="text"
+      id="username"
+      placeholder="Usuario">
+
+    <input type="password"
+      id="password"
+      placeholder="Contraseña">
+
+    <button onclick="login()">
+      Entrar
+    </button>
+
+    <p id="error"></p>
+
+  </div>
+
+  <!-- PANEL -->
+
+  <div class="admin-panel"
+    id="adminPanel">
+
+    <aside>
+
+      <h2>
+        Panel Admin
+      </h2>
+
+      <ul>
+
+        <li onclick="showSection('projects')">
+          Proyectos
+        </li>
+
+        <li onclick="showSection('settings')">
+          Configuración
+        </li>
+
+      </ul>
+
+    </aside>
+
+    <!-- CONTENT -->
+
+    <main>
+
+      <!-- PROYECTOS -->
+
+      <section id="projects"
+        class="admin-section active">
+
+        <h2>
+          Agregar Proyecto
+        </h2>
+
+        <input type="text"
+          id="projectName"
+          placeholder="Nombre del proyecto">
+
+        <input type="text"
+          id="projectLink"
+          placeholder="Link del proyecto">
+
+        <input type="text"
+          id="projectImage"
+          placeholder="Ruta imagen">
+
+        <button onclick="addProject()">
+          Agregar Proyecto
+        </button>
+
+        <div id="projectsList">
+        </div>
+
+      </section>
+
+      <!-- SETTINGS -->
+
+      <section id="settings"
+        class="admin-section">
+
+        <h2>
+          Configuración
+        </h2>
+
+        <p>
+          Próximamente más herramientas.
+        </p>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="admin.js"></script>
+
+</body>
+
+</html>
